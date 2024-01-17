@@ -1,0 +1,66 @@
+.container-fluid {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .container-fluid {
+      max-width: 100%;
+      padding: 5; /* Set padding to zero on smaller screens */
+    }
+  }
+
+  .fa-bars {
+    color: #86888b ; /*  grey   */
+    font-size: 30px;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+
+  .fa-user {
+    color: #86888b; /* grey */
+    font-size: 24px;
+    margin-top: -100px;
+  }
+
+  .menu-label {
+    font-size: 9px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    color: #86888b;  /* grey */
+
+  }
+
+  .no-underline {
+    text-decoration: none !important;
+}
+
+.navbar-nav.ms-auto.custom-padding {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none; /* Remove underline */
+  font-family: "YourFont", sans-serif; /* Specify the font family */
+  font-size: 16px; /* Adjust the font size */
+  font-weight: bold; /* Adjust the font weight */
+  color: #86888b; /* Set the font color */
+
+}
+
+.navbar-nav.ms-auto.custom-padding li {
+    margin-right: 10px; /* Adjust the margin as needed for the desired space */
+
+
+}
+
+
+
+.ee-site-logo {
+  height: 60px;
+}
+

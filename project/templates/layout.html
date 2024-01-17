@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+    <!-- Page title, can be overridden by child templates -->
+    <title>{% block title %}TradeHarbor {% endblock %}</title>
+
+    <!-- Favicon link -->
+    <link href="/static/Anchor.jpg" rel="icon">
+
+    <!-- Bootstrap CSS -->
+    <!-- Note: Make sure to use the correct integrity hash for security -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link href="/static/styles.css" rel="stylesheet">
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4fc125cb37.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navbar Container -->
+    <div id="navbarContainer">
+
+        <!-- Primary Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-light" role="navigation" id="primary-navbar">
+            <div class="container-fluid">
+
+                <!-- Left Navigation Links -->
+                <ul class="navbar-nav me-auto" id="left-nav">
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle no-underline" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="fa fa-bars"></span>
+                            <div class="menu-label"> MENU </div>
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- Navigation Links for Overview -->
+                            <li class="h4-header">Overview</li>
+                            <li>
+                                <a href="/AccountOverview">Account Overview</a><!-- This links to a route that I still have to code -->
+                            </li>
+                            <li class="divider"></li>
+
+                            <!-- Navigation Links for My Investments -->
+                            <li class="h4-header">My Investments</li>
+                            <li>
+                                <a href="/Equity">Invest Now</a><!-- This links to a route that I still have to code -->
+                            </li>
+                            <li>
+                                <a href="/Sell">Sell</a><!-- This links to a route that I still have to code -->
+                            </li>
+                            <li>
+                                <a href="/RecurringInvestment">My Recurring Investments</a><!-- This links to a route that I still have to code -->
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+                <!--Home page logo-->
+                <a class="navbar-brand" href="/" aria-label="Home page">
+                    <img src="static/est. 1985_Cut.png" class="ee-site-logo" id="PrimarySiteLogo">
+                </a>
+
+                <!--The quick navigation links near profile button-->
+                <ul class="navbar-nav ms-auto custom-padding" id="right-nav">
+                    <li><!-- Add this container li -->
+                        <ul class="navbar-nav ms-auto d-none d-sm-none d-md-none d-lg-flex" >
+                            <li >
+                                <a href="/AccountOverview" class="text-decoration-none"><!-- This links to a route that I still have to code -->
+                                    <span class="hidden-sm font-sm"> ACCOUNT OVERVIEW</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="navbar-nav ms-auto d-none d-sm-none d-md-none d-lg-flex">
+                            <li >
+                                <a href="/InvestNow" class="text-decoration-none"><!--  This links to a route that I still have to code -->
+                                    <span class="hidden-sm font-sm"> INVEST NOW</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="My Profile" id="myProfileNavBar">
+                            <div class="circle-container circle-primary">
+                                <div class="circle-content font-white">
+                                    <span class="fa fa-user"></span>
+                                </div>
+                            </div>
+                            <span class="caret"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav> <!-- Navigation bar #1 -->
+
+
+        <nav></nav>
+        <nav></nav>
+
+    </div>
+</body>
+</html>
+
+
+
+<!--<a class="navbar-brand" href="/" aria-label="Home page">
+    <img src="/Content/Images/Common/EasyEquities_Logo.png" class="ee-site-logo" id="PrimarySiteLogo" alt="Site Logo">
+</a>-->  <!--stopped here -->
